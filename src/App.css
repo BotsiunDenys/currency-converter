@@ -1,39 +1,50 @@
-.App {
-  text-align: center;
+body {
+    min-height: 100vh;
+    background-color: #4657A1;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #181716;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 50px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+.converter {
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    align-items: center;
+    gap: 250px;
+    margin: 0 100px;
 }
-
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.title {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
 }
-
-.App-link {
-  color: rgb(112, 76, 182);
+.selectCurrency {
+    display: flex;
+    width: 250px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 25px;
+    font-size: 24px;
 }
-
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+.converterInput {
+    width: 250px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    outline: none;
+}
+.error, .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    color: white;
 }
